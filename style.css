@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-areas: "header header header" "nav main aside" "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  min-height: 100vh;
+  font-family: sans-serif, arial;
+  background-image: url(assets/imagem/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  color: white;
+  background-color: #121214;
+  margin: 20px;
+}
+
+header {
+  grid-area: header;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.sidebar {
+  grid-area: nav;
+  padding: 2rem;
+}
+
+main {
+  grid-area: main;
+  padding-top: 2rem;
+  text-align: justify;
+  max-width: 55rem;
+}
+
+aside {
+  grid-area: aside;
+  padding: 2rem;
+}
+
+footer {
+  grid-area: footer;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+ color: hotpink;
+}
+
+a {
+  color: white;
+}
